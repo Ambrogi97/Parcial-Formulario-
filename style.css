@@ -78,3 +78,25 @@ textarea{
     cursor: pointer;
 }
 
+footer a {
+    color: #ffff;
+    padding-right: 10px;
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    nav {
+        padding: 10px 0px;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
