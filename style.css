@@ -36,3 +36,45 @@ nav a{
 nav a:hover{
     color: #ffff;
 }
+
+form{
+    width: 450px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffff;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom:20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#enviar{
+    background-color: rgb(104, 228, 27);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+#enviar:hover{
+    cursor: pointer;
+}
+
