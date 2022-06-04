@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/logo.jpg" alt="logo de la empresa">
+            <h2 class="nombre-empresa">Nombre de la empresa</h2>
+        </div>
+        <nav>
+            <a href="#">inicio</a>
+            <a href="#">sobre nosotros</a>
+            <a href="#">contacto</a>
+        </nav>
+    </header>
+    <div>
+        <form action="">
+            <h2>Registro</h2>
+            <label for="#">Nombre:</label>
+            <input type="text">
+            <label for="#">Apellido:</label>
+            <input type="text">
+            <label for="#">Email:</label>
+            <input type="text">
+            <label for="#">Edad:</label>
+            <input type="text">
+
+            <label for="#">Sexo:</label> <br>
+            <input type="checkbox" id="hombre" name="hombre" value="hombre">
+            <label for="vehicle1"> hombre</label><br>
+            <input type="checkbox" id="mujer" name="mujer" value="mujer">
+            <label for="vehicle2"> mujer</label><br>
+            <input type="checkbox" id="otro" name="otro" value="otro">
+            <label for="vehicle3"> otro</label><br>
+
+            <label for="#">Temas de interes:</label>
+            <input type="checkbox" id="musica" name="musica" value="musica">
+            <label for="vehicle1"> musica</label><br>
+            <input type="checkbox" id="deporte" name="deporte" value="deporte">
+            <label for="vehicle2"> deporte</label><br>
+            <input type="checkbox" id="juegos" name="juegos" value="juegos">
+            <label for="vehicle3"> juegos</label><br>
+            <input type="checkbox" id="tecnologia" name="tecnologia" value="tecnologia">
+            <label for="vehicle3"> tecnologia</label><br>
+
+            <label for="">Pais:</label>
+            <select>
+                <option disabled selected></option>
+                <option>Argentina</option>
+                <option>Chile</option>
+                <option>Brasil</option>
+                <option>Uruguay</option>
+            </select>
+            <label for="#">Comentarios</label>
+            <textarea name="mensaje"></textarea>
+            <input type="button" id="enviar" value="Enviar">
+        </form>
+    </div>
+    <footer>
+        <nav>
+            <a href="#">inicio</a>
+            <a href="#">sobre nosotros</a>
+            <a href="#">contacto</a>
+        </nav>
+    </footer>
+</body>
+</html>
