@@ -1,7 +1,9 @@
 body{
     margin: 0;
     background-image: url(/img/fondo.jpg);
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 header{
@@ -62,6 +64,15 @@ input, textarea{
     box-sizing: border-box;
 }
 
+.checkbox{
+    width: 13px;
+    height: 13px;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    overflow: hidden;
+}
+
 textarea{
     min-height: 100px;
     max-height: 200px;
@@ -78,9 +89,16 @@ textarea{
     cursor: pointer;
 }
 
-footer a {
+footer{
+    width: 100%;
+    bottom: 0%;
+    background-color: #000;
+    min-height: 70px;
+}
+
+footer p {
     color: #ffff;
-    padding-right: 10px;
+    text-align: center;
 }
 
 @media (max-width:480px){
