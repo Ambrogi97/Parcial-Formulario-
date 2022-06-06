@@ -50,6 +50,19 @@ form{
     border-radius: 20px;
 }
 
+.mensajeError {
+    color: rgb(255, 1, 1);
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .mensajeCorrecto {
+    text-align: center;
+    font-weight: bold;
+  }
+
 h2{
     text-align: center;
     margin: 0;
@@ -90,15 +103,16 @@ textarea{
 }
 
 footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    bottom: 0%;
     background-color: #000;
     min-height: 70px;
 }
 
 footer p {
     color: #ffff;
-    text-align: center;
 }
 
 @media (max-width:480px){
