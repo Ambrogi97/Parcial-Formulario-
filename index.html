@@ -20,16 +20,28 @@
         </nav>
     </header>
     <div>
-        <form action="">
+        <form class="form" id="form">
             <h2>Registro</h2>
-            <label for="#">Nombre:</label>
-            <input type="text">
-            <label for="#">Apellido:</label>
-            <input type="text">
-            <label for="#">Email:</label>
-            <input type="text">
-            <label for="#">Edad:</label>
-            <input type="text">
+            <div class="input nombre">
+                <label for="#">Nombre:</label>
+                <input type="text" name="Nombre" id="nombre"> 
+                <p class="mensajeError"></p>
+            </div>
+            <div class="input apellido">
+                <label for="#">Apellido:</label>
+                <input type="text" name="Apellido" id="apellido">
+                <p class="mensajeError"></p>
+            </div>
+            <div class="input email">
+                <label for="#">Correo:</label>
+                <input type="email" name="email" id="email">
+                <p class="mensajeError"></p>
+            </div>
+            <div class="edad">
+                <label for="#">Edad:</label>
+                <input type="text" name="Edad" id="edad">
+                <p class="mensajeError"></p>
+            </div>
 
             <label for="#">Sexo:</label> <br>
             <input class="checkbox" type="checkbox" id="hombre" name="hombre" value="hombre">
@@ -59,7 +71,10 @@
             </select><br><br>
             <label for="#">Comentarios</label>
             <textarea name="mensaje"></textarea>
-            <input type="button" id="enviar" value="Enviar">
+            <div>
+                <input type="submit" id="enviar" value="Enviar">
+            </div>
+            <p class="mensajeCorrecto"></p>
         </form>
     </div>
     <footer>
