@@ -42,14 +42,14 @@ function validacionForm(){
 	}
 
 	if (document.getElementById("hombre").checked || document.getElementById("mujer").checked ||  document.getElementById("otro").checked) {
-		return condicion
+		condicion = false;
 	}
 	else{
 		mostrarMensajeError("sexo", "campo obligatorio - Debes seleccionar una opcion")
 	}
 
 	if (document.getElementById("musica").checked || document.getElementById("deporte").checked ||  document.getElementById("juegos").checked ||  document.getElementById("tecnologia").checked) {
-		return condicion
+		condicion = false;
 	}
 	else{
 		mostrarMensajeError("temas", "campo obligatorio - Debes seleccionar una opcion")
