@@ -42,7 +42,7 @@ nav a:hover{
 form{
     width: 450px;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #ffff;
     padding: 5px 20px;
     box-sizing: border-box;
@@ -50,10 +50,10 @@ form{
     border-radius: 20px;
 }
 
-.mensajeError {
+.mensajeError{
     color: rgb(255, 1, 1);
     margin-top: 0px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
   }
@@ -78,7 +78,7 @@ input, textarea{
     box-sizing: border-box;
 }
 
-.checkbox{
+.check{
     width: 13px;
     height: 13px;
     margin:0;

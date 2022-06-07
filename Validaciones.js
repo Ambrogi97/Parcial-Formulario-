@@ -1,7 +1,10 @@
 const nombre = document.getElementById("nombre");
 const apellido = document.getElementById("apellido");
-const correo = document.getElementById("email");
+const email = document.getElementById("email");
 const edad = document.getElementById("edad");
+const sexo = document.getElementById("radio");
+const temas = document.getElementById("temas")
+const pais = document.getElementById("pais")
 const form = document.getElementById("form");
 const listInputs = document.querySelectorAll(".input");
 
@@ -28,14 +31,35 @@ function validacionForm(){
 		mostrarMensajeError("apellido", "campo obligatorio - el apellido debe tener mas de 3 caracteres*")
 		condicion = false;
 	}
-	if (email.value.length < 3 || email.value.trim() == "") {
+	if (email.value.trim() == "" || (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(email))) {
 		mostrarMensajeError("email", "campo obligatorio*")
-		email = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 		condicion = false;
 	}
-	if (edad.value)
-	return condicion
+
+	if (edad.value.trim() == "" || edad.value > 100 && edad.value < 0) {
+		mostrarMensajeError("edad", "campo obligatorio - tiene que ser una edad valida")
+		condicion = false;
 	}
+
+	if (document.getElementById("hombre").checked || document.getElementById("mujer").checked ||  document.getElementById("otro").checked) {
+		return condicion
+	}
+	else{
+		mostrarMensajeError("sexo", "campo obligatorio - Debes seleccionar una opcion")
+	}
+
+	if (document.getElementById("musica").checked || document.getElementById("deporte").checked ||  document.getElementById("juegos").checked ||  document.getElementById("tecnologia").checked) {
+		return condicion
+	}
+	else{
+		mostrarMensajeError("temas", "campo obligatorio - Debes seleccionar una opcion")
+	}
+
+	if (pais.value == 0) {
+		mostrarMensajeError("pais", "campo obligatorio - Debes seleccionar una opcion")
+	}
+	return condicion
+}	
 
 function mostrarMensajeError(claseInput, mensaje) {
 	let elemento = document.querySelector(`.${claseInput}`);
