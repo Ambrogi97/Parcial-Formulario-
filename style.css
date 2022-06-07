@@ -61,6 +61,7 @@ form{
   .mensajeCorrecto {
     text-align: center;
     font-weight: bold;
+    color: rgb(0, 48, 6);
   }
 
 h2{
